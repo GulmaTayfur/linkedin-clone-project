@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkedin Clone Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Ara" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /> <span>Ana Sayfa</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /> <span>Benim Ağım</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/jobs.png" /> <span>İş İlanları</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /> <span>Mesajlar</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" /> <span>Bildirimler</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="images/user-1.png"
+            class="nav-profile-img"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+      <!-- --------------- profile-drop-down-menu---------- -->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png" />
+            <div>
+              <h3>Rayan Walton</h3>
+              <a href="profile.html">Profilinizi Görüntüleyin</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" />
+            <p>Geri Bildirim Verin</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" />
+            <p>Ayarlar ve Gizlilik</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png" />
+            <p>Yardım ve Destek</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png" />
+            <p>Ekran ve Erişilebilirlik</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" />
+            <p>Çıkış Yap</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/cover-pic.png" width="100%" />
+          <div class="profile-container-inner">
+            <img src="images/user-1.png" class="profile-pic" />
+            <h1>Rayan Walton</h1>
+            <b
+              >Microsoft'ta Web Geliştirici | Daha önce DataStack'te geliştirici
+              ve Oracle'da stajyer</b
+            >
+            <p>
+              San Francisco, Amerika Birleşik Devletleri &middot;
+              <a href="#">İletişim Bilgileri</a>
+            </p>
+            <div class="mutual-connection">
+              <img src="images/user-2.png" />
+              <span>1 ortak bağlantı: Orlando Diggs</span>
+            </div>
+            <div class="profile-btn">
+              <a href="" class="primary-btn"
+                ><img src="images/connect.png" />Bağlan</a
+              >
+              <a href=""><img src="images/chat.png" />Mesaj</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-description">
+          <h2>Hakkında</h2>
+          <p>
+            Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+            pazarlama stratejilerine bağlıdır. Eğer tüm büyük arama motorlarının
+            ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.
+          </p>
+          <a href="" class="see-more-link">Daha Fazla...</a>
+        </div>
+
+        <div class="profile-description">
+          <h2>Deneyim</h2>
+          <div class="profile-desc-row">
+            <img src="images/microsoft.png" />
+            <div>
+              <h3>FrontEnd Geliştiricisi</h3>
+              <b>Microsoft &middot; Tam Zamanlı</b>
+              <b>Şubat 2021 - Şu Anda &middot; 1.5 yıl</b>
+              <p>
+                Bilgisayar programlaması, genellikle bir yürütülebilir
+                bilgisayar programı tasarlayarak ve inşa ederek belirli bir
+                hesaplamanın gerçekleştirilme sürecidir.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/slack.png" />
+            <div>
+              <h3>Jr Full Stack Geliştiricisi</h3>
+              <b>Slack &middot; Tam Zamanlı</b>
+              <b>Haziran 2018 - Ocak 2021 &middot; 2.6 yıl</b>
+              <p>
+                Bilgisayar programlaması, genellikle bir yürütülebilir
+                bilgisayar programı tasarlayarak ve inşa ederek belirli bir
+                hesaplamanın gerçekleştirilme sürecidir.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/google.png" />
+            <div>
+              <h3>Web Geliştirici</h3>
+              <b>Google Inc &middot; Tam Zamanlı</b>
+              <b>Eylül 2015 - Mayıs 2018 &middot; 2.8 yıl</b>
+              <p>
+                Bilgisayar programlaması, genellikle bir yürütülebilir
+                bilgisayar programı tasarlayarak ve inşa ederek belirli bir
+                hesaplamanın gerçekleştirilme sürecidir.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="experience-link"
+            >Tüm 7 deneyimi göster <img src="images/right-arrow.png" alt=""
+          /></a>
+        </div>
+
+        <div class="profile-description">
+          <h2>Eğitim</h2>
+          <div class="profile-desc-row">
+            <img src="images/stanford.png" />
+            <div>
+              <h3>Stanford Üniversitesi</h3>
+              <b>BSEE, Elektrik Mühendisliği</b>
+              <b>2018 - 2022</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/north.png" />
+            <div>
+              <h3>Northwestern Üniversitesi</h3>
+              <b>Bilgisayar Bilimi</b>
+              <b>2015 - 2018</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/mit.png" />
+            <div>
+              <h3>Harvard Üniversitesi</h3>
+              <b>Lise</b>
+              <b>2005 - 2015</b>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>Beceriler</h2>
+          <a href="#" class="skills-btn">Liderlik</a>
+          <a href="#" class="skills-btn">Web Tasarımı</a>
+          <a href="#" class="skills-btn">Geliştirme</a>
+          <a href="#" class="skills-btn">İletişim</a>
+          <a href="#" class="skills-btn">UI/UX</a>
+          <a href="#" class="skills-btn">Planlama</a>
+          <a href="#" class="skills-btn">Kodlama</a>
+          <a href="#" class="skills-btn">JavaScript</a>
+          <a href="#" class="skills-btn">Python</a>
+          <a href="#" class="skills-btn">Girişimcilik</a>
+        </div>
+        <div class="profile-description">
+          <h2>Diller</h2>
+          <a href="#" class="language-btn">İngilizce</a>
+          <a href="#" class="language-btn">Almanca</a>
+        </div>
+      </div>
+      <!-- ------profil-sidebar------ -->
+      <div class="profile-sidebar">
+        <div class="sidebar-ad">
+          <small>Reklam &middot; &middot; &middot;</small>
+          <p>Web tasarımının 5 prensibini öğrenin</p>
+          <div>
+            <img src="images/user-1.png" />
+            <img src="images/mi-logo.png" />
+          </div>
+          <b>Xiaomi'de Marka ve Talep</b>
+          <a href="#" class="ad-link">Daha Fazla Bilgi Alın</a>
+        </div>
+        <div class="sidebar-people">
+          <h3>Tanıdığınız Kişiler</h3>
+          <div class="sidebar-people-row">
+            <img src="images/user-3.png" />
+            <div>
+              <h2>Samuel Tony</h2>
+              <p>Alibaba'da Pazarlama Müdürü</p>
+              <a href="#">Bağlan</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-4.png" />
+            <div>
+              <h2>Benjamin Leo</h2>
+              <p>Alibaba'da Pazarlama Müdürü</p>
+              <a href="#">Bağlan</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-5.png" />
+            <div>
+              <h2>Steave Greg</h2>
+              <p>Alibaba'da Pazarlama Müdürü</p>
+              <a href="#">Bağlan</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-2.png" />
+            <div>
+              <h2>Martin Lewis</h2>
+              <p>Alibaba'da Pazarlama Müdürü</p>
+              <a href="#">Bağlan</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-1.png" />
+            <div>
+              <h2>Clarence George</h2>
+              <p>Alibaba'da Pazarlama Müdürü</p>
+              <a href="#">Bağlan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile-footer -->
+    <div class="profile-footer">
+      <div class="sidebar-useful-links">
+        <a href="#">Hakkında</a>
+        <a href="#">Erişilebilirlik</a>
+        <a href="#">Yardım Merkezi</a>
+        <a href="#">Gizlilik Politikası</a>
+        <a href="#">Reklam</a>
+        <a href="#">Uygulamayı Edinin</a>
+        <a href="#">Daha Fazla</a>
+        <div class="copyright-msg">
+          <img src="images/logo.png" />
+          <p>Linkedup &#169; 2022. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let profileMenu = document.getElementById("profileMenu");
+
+      function toggleMenu() {
+        profileMenu.classList.toggle("open-menu");
+      }
+    </script>
+  </body>
+</html>

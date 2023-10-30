@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navbar Alanı -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="/images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="/images/search.png" alt="">
+                <input type="text" placeholder="Ara" />
+
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" /> <span> Ana Sayfa</span></a></li>
+                <li><a href="#" class="active-link"><img src="images/network.png" /> <span> Benim Ağım</span></a></li>
+                <li><a href="#" class="active-link"><img src="images/jobs.png" /> <span> İş İlanları</span></a></li>
+                <li><a href="#" class="active-link"><img src="images/message.png" /> <span> Mesajlar</span></a></li>
+                <li><a href="#" class="active-link"><img src="images/notification.png" /> <span> Bildirimler</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()" />
+            </div>
+        </div>
+        <!-- Profil Drop-down-menu -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Gülma Tayfur</h3>
+                        <a href="profile.html">Profilinizi Görüntüleyin</a>
+                    </div>
+                </div>
+                <hr>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Geribildirim Ver</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Ayarlar ve Gizlilik</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Yardım ve Destek</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Görünüm ve Erişilebilirlik</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Çıkış Yap</p>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar kapanış -->
+
+    <!-- sidebar -->
+    <div class="container">
+
+        <!-- sol-sidebar -->
+
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" width="100%" alt="">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png">
+                    <h1>Gülma Tayfur</h1>
+                    <h3>Microsoft'ta Web Geliştiricisi</h3>
+                    <ul>
+                        <li>Profil Görüntülemeleriniz <span>52</span></li>
+                        <li>Gönderi Görüntülemeleriniz <span>810</span></li>
+
+                        <li>Bağlantılarınız <span>205</span></li>
+
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/items.png">Ürünlerim</a>
+                    <a href="#"> <img src="images/premium.png">Premium'u Deneyin</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>SON</h3>
+                <a href="#"><img src="images/recent.png">Web Geliştirme</a>
+                <a href="#"><img src="images/recent.png">Kullanıcı Arayüzü</a>
+                <a href="#"><img src="images/recent.png">Çevrimiçi Eğitim</a>
+                <a href="#"><img src="images/recent.png">Çevrimiçi Öğrenme</a>
+                <a href="#"><img src="images/recent.png">Daha İyi Kodlama</a>
+                <a href="#"><img src="images/recent.png">Grup Öğrenme</a>
+                <h3>GRUPLAR</h3>
+                <a href="#"><img src="images/group.png" alt="">Web Tasarım Grubu</a>
+                <a href="#"><img src="images/group.png" alt="">HTML ve CSS Öğrenenler</a>
+                <a href="#"><img src="images/group.png" alt="">Phyton ve Javascript Grubu</a>
+                <a href="#"><img src="images/group.png" alt="">Kodlama Çevrimiçi Grubu</a>
+                <h3>ETİKETLER</h3>
+                <a href="#"><img src="images/hashtag.png" alt="">Website Geliştirme</a>
+                <a href="#"><img src="images/hashtag.png" alt="">Kullanıcı Arayüzü</a>
+                <a href="#"><img src="images/hashtag.png" alt="">E-ticaret</a>
+                <div class="discover-more-link">
+                    <a href="#">Daha Fazlasını Keşfedin</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Daha Fazla Göster</p>
+        </div>
+
+        <!-- Ana İçerik Alanı-->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-1.png" alt="">
+                    <textarea rows="2" placeholder="Bir Gönderi Yazın.."></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png" alt="">Fotoğraf</li>
+                    <li><img src="images/video.png" alt="">Video</li>
+                    <li><img src="images/event.png" alt="">Etkinlik</li>
+                    <li>Gönder</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>
+                    Sırala: <span>en iyi <img src="images/down-arrow.png" alt=""></span>
+                </p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Gellelio Group Kurucu ve CEO'su | Melek Yatırımcı </small>
+                        <small>2 saat önce</small>
+                    </div>
+                </div>
+                <p>Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+                    pazarlama stratejisine bağlıdır. Eğer tüm büyük arama motorlarının
+                    ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.</p>
+                <img src="images/post-image-1.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra ve diğer 75 kişi</span>
+                    </div>
+                    <div>
+                        <span>22 Yorum &middot; 40 Paylaşım</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Beğen</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Yorum Yap</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Paylaş</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Gönder</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Gellelio Group Kurucu ve CEO'su | Melek Yatırımcı </small>
+                        <small>2 saat önce</small>
+                    </div>
+                </div>
+                <p>Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+                    pazarlama stratejisine bağlıdır. Eğer tüm büyük arama motorlarının
+                    ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.</p>
+                <img src="images/post-image-2.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra ve diğer 75 kişi</span>
+                    </div>
+                    <div>
+                        <span>22 Yorum &middot; 40 Paylaşım</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Beğen</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Yorum</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Paylaş</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Gönder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Gellelio Group Kurucu ve CEO'su | Melek Yatırımcı </small>
+                        <small>2 saat önce</small>
+                    </div>
+                </div>
+                <p>Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+                    pazarlama stratejisine bağlıdır. Eğer tüm büyük arama motorlarının
+                    ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.</p>
+                <img src="images/post-image-3.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra ve diğer 75 kişi</span>
+                    </div>
+                    <div>
+                        <span>22 Yorum &middot; 40 Paylaşım</span>
+                    </div>
+
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Beğen</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Yorum</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Paylaş</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Gönder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Gellelio Group Kurucu ve CEO'su | Melek Yatırımcı </small>
+                        <small>2 saat önce</small>
+                    </div>
+                </div>
+                <p>Her web sitesinin başarısı, arama motoru optimizasyonu ve dijital
+                    pazarlama stratejisine bağlıdır. Eğer tüm büyük arama motorlarının
+                    ilk sayfasında yer alıyorsanız, rakiplerinizin önündesiniz demektir.</p>
+                <img src="images/post-image-4.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra ve diğer 75 kişi</span>
+                    </div>
+                    <div>
+                        <span>22 Yorum &middot; 40 Paylaşım</span>
+                    </div>
+
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Beğen</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Yorum Yap</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Paylaş</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Gönder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sağ-sidebar -->
+
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon" alt="">
+                <h3>Trend Haberler</h3>
+                <a href="#">Yetenekli İşgücüne Yüksek Talep</a>
+                <span>1 gün önce &middot; 10.934 okuyucu</span>
+                <a href="#">Kariyerler Yatay Genişliyor</a>
+                <span>19 saat önce &middot; 1.552 okuyucu</span>
+                <a href="#">ABD için Daha Az Çalışma Vizesi, İngiltere için Daha Fazla</a>
+                <span>1 gün önce &middot; 27.290 okuyucu </span>
+                <a href="#">Daha Fazla İşe Alım = Daha Yüksek Güven mi?</a>
+                <span>18 saat önce &middot; 8.208 okuyucu</span>
+                <a href="#">Gautam Adani Dünyanın Üçüncü En Zengini</a>
+                <span>12 saat önce &middot; 4.205 okuyucu</span>
+                <a href="#" class="read-more-link">Daha Fazlasını Oku</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Reklam &middot;&middot;&middot;</small>
+                <p>Web tasarımının 5 ilkesini öğrenin</p>
+                <div>
+                    <img src="images/user-1.png" alt="Kullanıcı 1 Resmi">
+                    <img src="images/mi-logo.png" alt="Mi Logo">
+                </div>
+                <b>Xiaomi'de Marka ve Talep</b>
+                <a href="#" class="ad-link">Daha Fazla Bilgi Edinin</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">Hakkında</a>
+                <a href="#">Erişilebilirlik</a>
+                <a href="#">Yardım Merkezi</a>
+                <a href="#">Gizlilik Politikası</a>
+                <a href="#">Reklam</a>
+                <a href="#">Uygulamayı İndir</a>
+                <a href="#">Daha Fazla</a>
+
+                <div class="copyright-msg">
+                    <img src="images/logo.png" alt="">
+                    <p>Linkedup &#169; 2023. All right reserved</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
